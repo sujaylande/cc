@@ -1,0 +1,12 @@
+class Solution:
+    def isPanagram(self,s):
+        #your code here
+        res=set()
+        s=s.lower()
+        for ele in s:
+            if ele.isalpha():
+                res.add(ele)
+        if len(res)==26:
+            return True
+        else:
+            return False
